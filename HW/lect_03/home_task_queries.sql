@@ -41,7 +41,7 @@ limit 10
 Вивести категорія фільмів, на яку було витрачено найбільше грошей
 в прокаті
 */
-select c."name" as category_name, sum(p.amount) AS total_sales
+select c."name" as category_name, sum(p.amount) as total_sales
 from payment as p
 join rental as r 
 	on p.rental_id = r.rental_id
